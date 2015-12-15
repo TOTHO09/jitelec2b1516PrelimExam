@@ -14,7 +14,7 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/tvTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/seekBar"
@@ -31,13 +31,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/txtseekbar"
+        android:layout_below="@+id/tvSeekbar"
         android:max="1000"
         android:progress="100"
         android:indeterminate="false" />
 
     <TextView
-        android:id="@+id/txtseekbar"
+        android:id="@+id/tvSeekbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -59,24 +59,24 @@
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/Rincrement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/txt_increment"/>
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/Rdecrement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txt_decrement"/>
     </RadioGroup>
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/btnSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/timer"
+        android:layout_below="@+id/tvTimer"
         android:layout_centerHorizontal="true"
         android:text="New ToggleButton"
         android:textOff="STOP"
